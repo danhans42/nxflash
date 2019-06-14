@@ -73,19 +73,9 @@ If you wish, you can build a bootable NXFLASH CD. The process for this is exactl
 4. On your machine upload your rom eg. nxflash.py -rd /dev/ttyS0 actionreplaydump.bin 
 5. Once it has successfully downloaded, NXFLASH will return to the main menu. 
 
-## Limitations
+## Supported EEPROMs
 
-* There is NO CRC/CHECKSUM/VERIFICATION 
-
-Currently there are no CRC checks on transmitted/received data and the protocol is very simple. In testing I never once had an issue with transmission errors, but just be careful and ensure you have other means to flash as a contingency.
-
-* ROM/BIOS Download
-
-Currently, no matter what flash EEPROM your cart is fitted with nxflash will always download a full 512k. You can then trim this down. I will address this in future versions. BIOS download is always 512k
-
-## EEPROM Support
-
-NXFLASH supports the full set of EEPROMs that were supported by the last version of xflash. 
+NXFLASH supports the full set of EEPROMs that were supported by the last version of xflash. This list below will (hopefully) grow and new parts will be added to the list along with the corresponding version number support commenced from.
 
 Manufacturer|Model|Size|Added?
 ------------|-----|----|------
@@ -108,6 +98,16 @@ WINBOND| 29EE01x|128k|Legacy
 WINBOND| 29C020|256k|Legacy
 WINBOND| 29C040|512k|Legacy
 
+## Limitations - !!PLEASE READ!!
+
+* There is NO CRC/CHECKSUM/VERIFICATION 
+
+Currently there are no CRC checks on transmitted/received data and the protocol is very simple. In testing I never once had an issue with transmission errors, but just be careful and ensure you have other means to flash as a contingency. When writing this I had the occasional timeout when using the tools on Linux. The issue turned out to be a fake FTDI UART. Ensure your serial cable uses a legit UART that is supported well by your OS. I have tested the code with a Genuine FTDI232, Sil CP2103 and using a regular serial port (16550).
+
+* ROM/BIOS Download
+
+Currently, no matter what flash EEPROM your cart is fitted with nxflash will always download a full 512k. You can then trim this down. I will address this in future versions. BIOS download is always 512k.
+
 ## Future Goals
 
 I will also be looking at adding further features into NXFLASH to make it even more useful - my aspiration is for it to turn into a bit of a multi purpose tool.
@@ -124,7 +124,9 @@ This is a project that I am using to learn more about playstation programming, a
 
 Thanks to Tim S for writing xflash and for releasing the sources and to Shadow of psxdev for organising the release of them. 
 
-Also, big thanks to Hitmen, Sicklebrick, Trimesh, Shendo, Lameguy64, orion, Xavi92 and Greg - your posts, published source code and releases have helped massively with my learning of programming on the PSX.
+Also, big thanks to Hitmen, Sicklebrick, Trimesh, Squaresoft74, Shendo, Lameguy64, orion, Xavi92 and Greg - your posts, published source code and releases have helped massively with my learning of programming on the PSX.
+
+I am always interested to hear of carts/eeproms that are not supported. If you have one drop me a line
 
 contact: danhans42 at gmail.com
 website: psx0.wordpress.com
