@@ -17,7 +17,7 @@ As well as all the existing features of XFLASH - NXFLASH adds the following feat
 
 
 ## nxflash.py
-The nxflash.py is the client side tool for NXFLASH. As well as the supported features of xflash, nxflash.py will also allow you to upload & execute a PSX-EXE to PSXSERIAL/UniROM v4.4/v6. NXFLASH itself does not support EXE upload currently - although it is a future goal.
+The nxflash.py is the client side tool for NXFLASH. As well as the supported features of xflash, nxflash.py will also allow you to upload & execute a PSX-EXE to PSXSERIAL/UniROM v4.4/v6. NXFLASH itself does not support EXE upload currently - although it is a future goal. 
 
 nxflash.py requires pyserial - if you dont already have it installed you can install it using pip. 
 
@@ -35,6 +35,27 @@ nxflash.py *command port file*
 * Download ROM - 'nxflash.py -rd /dev/ttyUSB0 ar_backup.bin'
 * Download BIOS -'nxflash.py -rb /dev/ttyUSB0 scph1002.bin'
 * Upload+Run EXE - 'nxflash.py -re /dev/ttyUSB0 greentro.exe'
+
+## Xplorer + Parallel Port
+
+Xflash supported dumping/flashing using a parallel port connection in conjunction with xkiller. This support has been left untouched in NXFLASH. I havent tested it as I dont have a windows machine running with a parallel port.
+
+## Flashing from CD
+
+If you wish, you can build a bootable NXFLASH CD. The process for this is exactly the same as XFLASH. You will need to combine roms together using the romfile utility.This is included with xflash - see here to obtain an older version http://www.psxdev.net/forum/download/file.php?id=74
+
+## Uploading/Flashing via Serial
+
+1. Connect your serial cable is connected to both your PSX and PC.
+2. Run NXFLASH on your PlayStation via your chosen method - ensure your EEPROM is correctly detected (not unknown/unsupported).
+3. Press TRIANGLE on the pad to go into serial ROM upload.
+4. On your machine upload your rom eg. nxflash.py -ru /dev/ttyS0 uniromv66.bin 
+5. Once it has successfully uploaded, NXFLASH will return to the main menu. 
+6. You will now see the Flash ROM option appear, press X to flash. If there are no error messages the flash was successful.
+7. Reboot your console.
+
+
+
 
 
 
