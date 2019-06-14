@@ -2,9 +2,7 @@
 
 NXFLASH is a utility for the Sony Playstation. It allows you to flash the EEPROM of a cheat cartridge from a CD or via SIO (serial) as well as via parallel using xkiller (untested).
 
-It uses a basic serial cable for communication, no handshaking required. The same as you would use for PSXSERIAL/HITSERIAL. If you are going to build one, I would recommend avoiding FTDI232 based adapters unless they are definitely genuine, as the counterfeit adapters are a bit flakey, If you are going to be buying from eBay/Aliexpress etc I would avoid FTDI and go for something CH340 or CP210x based. If you need to build a cable head over to PSXdev.net as there are plenty of threads on that.
-
-You can also use an offical Yaroze serial cable or a Sharklink Cable - but I wouldnt bother unless you already have them.
+It uses a basic serial cable for communication, no handshaking required(just Rx/Tx/Gnd). You can also use an offical Yaroze serial cable or a Sharklink Cable - but I wouldnt bother unless you already own one.
 
 ## Introduction
 
@@ -134,7 +132,11 @@ WINBOND| 29C040|512k|Legacy
 
 * There is NO CRC/CHECKSUM/VERIFICATION 
 
-Currently there are no CRC checks on transmitted/received data and the protocol is very simple. In testing I never once had an issue with transmission errors, but just be careful and ensure you have other means to flash as a contingency. When writing this I had the occasional timeout when using the tools on Linux. The issue turned out to be a fake FTDI UART. Ensure your serial cable uses a legit UART that is supported well by your OS. I have tested the code with a Genuine FTDI232, Sil CP2103 and using a regular serial port (16550).
+Currently there are no CRC checks on transmitted/received data and the protocol is very simple. In testing I never once had an issue with transmission errors, but just be careful and ensure you have other means to flash as a contingency. When writing this I had the occasional timeout when using the tools on Linux. The issue turned out to be a fake FTDI UART.
+
+I would recommend avoiding FTDI232 based adapters unless they are 100% genuine as the counterfeit adapters are a bit flakey. Adafruit and Sparkfun are genuine but expensive. If you are going to be buying from eBay/Aliexpress etc I would choose something CH340 or Sil CP210x based. I used a counterfeit FTDI module when first writing and it caused me issues with data loss and timeouts in Linux. 
+
+Build instructions are over on PSXdev.net and other forums for building a cable.
 
 * ROM/BIOS Download
 
