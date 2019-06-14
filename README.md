@@ -21,7 +21,7 @@ The nxflash.py is the client side tool for NXFLASH. As well as the supported fea
 
 Usage is as follows :- 
 
-'nxflash.py <command> <port> <file>'
+'''bash nxflash.py <command> <port> <file> '''
 
 **Commands**
 
