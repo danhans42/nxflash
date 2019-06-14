@@ -24,7 +24,7 @@ The nxflash.py is the client side tool for NXFLASH. As well as the supported fea
 
 nxflash.py requires pyserial - if you dont already have it installed you can install it using pip. Google will help you with this if youo get stuck
 
-**nxflash.py usage**
+**nxflash.py Usage**
 
 nxflash.py *command port file*
 * -ru : upload a ROM to nxflash for flashing.\n")
@@ -32,7 +32,7 @@ nxflash.py *command port file*
 * -bd : download PSX BIOS.\n")
 * -re : upload & execute PSX-EXE (PSXSERIAL/HITSERIAL/UniROM 4.4/v6 compatible)\n\n")
 
-**Examples**
+**nxflash.py Examples**
 
 * Upload ROM - 'nxflash.py -ru /dev/ttyUSB0 caetla038.bin'
 * Download ROM - 'nxflash.py -rd /dev/ttyUSB0 ar_backup.bin'
@@ -108,12 +108,6 @@ WINBOND| 29EE01x|128k|Legacy
 WINBOND| 29C020|256k|Legacy
 WINBOND| 29C040|512k|Legacy
 
-## Thanks
-
-This is a project that I am using to learn more about playstation programming, and C in general. Please take that into consideration and if you find any bugs - drop me a line or open an issue here and I will do my best to get onto it. 
-
-Thanks to Tim S for writing xflash and for releasing the sources and to the members of PSXDEV.net.
-
 ## Future Goals
 
 I will also be looking at adding further features into NXFLASH to make it even more useful - my aspiration is for it to turn into a bit of a multi purpose tool.
@@ -123,6 +117,14 @@ I will also be looking at adding further features into NXFLASH to make it even m
 * EXE Upload (PSX Serial Compatible)
 * Memory Card Dumping/Reading/Writing
 * Overhaul the user interface/colours/fonts
+
+## Thanks
+
+This is a project that I am using to learn more about playstation programming, and C in general. Please take that into consideration and if you find any bugs - drop me a line or open an issue here and I will do my best to get onto it. 
+
+Thanks to Tim S for writing xflash and for releasing the sources and to Shadow of psxdev for organising the release of them. 
+
+Also, big thanks to Hitmen, Sicklebrick, Trimesh, Shendo, Lameguy64, orion, Xavi92 and Greg - your posts, published source code and releases have helped massively with my learning of programming on the PSX.
 
 contact: danhans42 at gmail.com
 website: psx0.wordpress.com
