@@ -1,9 +1,11 @@
 # NXFLASH
 ## Introduction
 
+NXFLASH is a utility for the Sony Playstation. It allows you to dump/flash the EEPROM of a cheat cartridge from CD/SIO (serial) as well as via parallel using xkiller (untested)
+
 NXFLASH is built on the source of XFLASH, which was written by Tim Schuerewegen. Thanks to Shadow of PSXDEV.net and Tim for releasing this.  I decided to give it a new name - it basically means 'next xflash'. I believe it needed a new name as the original author may no longer want to be associated with it and to save confusion about client side tool compatibility.
 
-NXFLASH is a utility for the Sony Playstation. It allows you to dump/flash the EEPROM of a cheat cartridge. In order to run NXFLASH you will need a way to execute it on a console. I will not cover that here as plenty of guides are out there for mastering bootable PlayStation discs. Alternatively, you could execute it using your usual code upload method (catflap/psxexe etc.).
+In order to run NXFLASH you will need a way to execute it on a console. I will not cover that here as plenty of guides are out there for mastering bootable PlayStation discs. Alternatively, you could execute it using your usual code upload method (catflap/psxexe etc.).
 
 NXFLASH also has a Python3 based client for uploading/downloading data. It has been tested on Python 3.7 on both Linux and Windows 10.
 
