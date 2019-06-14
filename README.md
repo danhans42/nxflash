@@ -40,7 +40,7 @@ This is the name of your serial port, and will differ on what platform you run i
 
 *file*
 
-This is the file you want to read from or write to. **WARNING - THIS TOOL WILL OVERWRITE AN EXISTING FILE WITHOUT PROMPTING- BE CAREFUL**
+This is the file you want to read from or write to. WARNING - THIS TOOL WILL OVERWRITE AN EXISTING FILE WITHOUT PROMPTING - BE CAREFUL
 
 **Examples**
 
@@ -71,7 +71,7 @@ Consider the below when building a CD - taken from the original XFLASH readme.
 
 *When the program detects an non-Xplorer ROM file, it will ask you if it should be added to the romfile and uses the filename without extension as the ROM description for the X-Flash ROM selection menu*
 
-*The current ROM file limit is 128, more ROM's will crash both X-Flash & the ROM builder*
+*The current ROM file limit is 128, trying more ROM's will crash both X-Flash & the ROM builder*
 
 ## Uploading/Flashing via Serial
 
