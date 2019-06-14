@@ -19,16 +19,16 @@ As well as all the existing features of XFLASH - NXFLASH adds the following feat
 ## nxflash.py
 The nxflash.py is the client side tool for NXFLASH. As well as the supported features of xflash, nxflash.py will also allow you to upload & execute a PSX-EXE to PSXSERIAL/UniROM v4.4/v6. NXFLASH itself does not support EXE upload currently - although it is a future goal.
 
-Usage is as follows :- 
-
-**nxflash.py** *command port file*
-
 **Commands**
 
--ru : upload a ROM to nxflash for flashing.\n")
--rd : download ROM from nxflash.\n")
--bd : download PSX BIOS.\n")
--re : upload & execute PSX-EXE (PSXSERIAL/HITSERIAL/UniROM 4.4/v6 compatible)\n\n")
+* -ru : upload a ROM to nxflash for flashing.\n")
+* -rd : download ROM from nxflash.\n")
+* -bd : download PSX BIOS.\n")
+* -re : upload & execute PSX-EXE (PSXSERIAL/HITSERIAL/UniROM 4.4/v6 compatible)\n\n")
+
+## Usage
+
+**nxflash.py** *command port file*
 
 **Examples**
 
