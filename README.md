@@ -51,7 +51,7 @@ This is the file you want to read from or write to. WARNING - THIS TOOL WILL OVE
 * Download BIOS -'nxflash.py -rb /dev/ttyUSB0 scph1002.bin'
 * Upload+Run EXE - 'nxflash.py -re /dev/ttyUSB0 greentro.exe'
 
-## Xplorer + Parallel Port
+## Xkiller & Xplorer + Parallel Port
 
 Xflash supported dumping/flashing using a parallel port connection in conjunction with xkiller. This support has been left untouched in NXFLASH. I havent tested it as I dont have a windows machine running with a parallel port. The main point of the features I added is to try and get away from being tied to using a parallel port. I understand that serial isn't faster but when you can upload a ROM and flash it in a few minutes I really dont see a problem.
 
