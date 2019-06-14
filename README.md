@@ -27,6 +27,8 @@ nxflash.py requires pyserial - if you dont already have it installed you can ins
 **nxflash.py Usage**
 
 nxflash.py *command port file*
+
+*command
 * -ru : upload a ROM to nxflash for flashing.\n")
 * -rd : download ROM from nxflash.\n")
 * -bd : download PSX BIOS.\n")
