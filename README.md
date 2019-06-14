@@ -54,9 +54,56 @@ If you wish, you can build a bootable NXFLASH CD. The process for this is exactl
 6. You will now see the Flash ROM option appear, press X to flash. If there are no error messages the flash was successful.
 7. Reboot your console.
 
+## Dump BIOS via Serial
 
+1. Connect your serial cable is connected to both your PSX and PC.
+2. Run NXFLASH on your PlayStation via your chosen method - ensure your EEPROM is correctly detected (not unknown/unsupported).
+3. Press SQUARE on the pad to go into dump bios to SIO.
+4. On your machine upload your rom eg. nxflash.py -bd /dev/ttyS0 psxbios.bin 
+5. Once it has successfully downloaded, NXFLASH will return to the main menu. 
 
+## Dump Cheat Cart via Serial
 
+1. Connect your serial cable is connected to both your PSX and PC.
+2. Run NXFLASH on your PlayStation via your chosen method - ensure your EEPROM is correctly detected (not unknown/unsupported).
+3. Press SQUARE on the pad to go into dump bios to SIO.
+4. On your machine upload your rom eg. nxflash.py -rd /dev/ttyS0 actionreplaydump.bin 
+5. Once it has successfully downloaded, NXFLASH will return to the main menu. 
+
+## Limitations
+
+* There is NO CRC/CHECKSUM/VERIFICATION 
+
+Currently there are no CRC checks on transmitted/received data and the protocol is very simple. In testing I never once had an issue with transmission errors, but just be careful and ensure you have other means to flash as a contingency.
+
+* ROM/BIOS Download
+
+Currently, no matter what flash EEPROM your cart is fitted with nxflash will always download a full 512k. You can then trim this down. I will address this in future versions. BIOS download is always 512k
+
+* EEPROM Support
+
+NXFLASH supports the full set of EEPROMs that were supported by the last version of xflash. 
+
+Manufacturer|Model|Size
+------------|-----|----
+ATMEL| 29C010A |128k
+ATMEL| 29LV010A|128k
+ATMEL| 29C020|256k
+ATMEL| 29BV020|256k
+ATMEL| 29C040A|512k
+ATMEL| 29xV040A|512k
+SST| 29EE010|128k
+SST| 29xE010|128k
+SST| 29EE010A|128k
+SST| 29xE010A|128k
+SST| 29EE020|256k
+SST| 29xE020|256k
+SST| 29EE020A|256k
+SST| 2xEE020A|256k
+SST| 28SF040|512k
+WINBOND| 29EE01x|128k
+WINBOND| 29C020|256k
+WINBOND| 29C040|512k
 
 
 
