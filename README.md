@@ -28,11 +28,19 @@ nxflash.py requires pyserial - if you dont already have it installed you can ins
 
 nxflash.py *command port file*
 
-*command
+*command*
 * -ru : upload a ROM to nxflash for flashing.\n")
 * -rd : download ROM from nxflash.\n")
 * -bd : download PSX BIOS.\n")
 * -re : upload & execute PSX-EXE (PSXSERIAL/HITSERIAL/UniROM 4.4/v6 compatible)\n\n")
+
+*port*
+
+This is the name of your serial port, and will differ on what platform you run it on. Linux is generally /dev/ttyS0 or /dev/ttyUSB0 or something alone those lines. Windows will be something like COM1 or COM5. I havent tested this on OSX, but assume it will be something like /dev/cu.usbserial.XXXXXXXX
+
+*file*
+
+This is the file you want to read from or write to. **WARNING - THIS TOOL WILL OVERWRITE AN EXISTING FILE WITHOUT PROMPTING- BE CAREFUL**
 
 **nxflash.py Examples**
 
