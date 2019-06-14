@@ -24,7 +24,7 @@ The nxflash.py is the client side tool for NXFLASH. As well as the supported fea
 
 nxflash.py requires pyserial - if you dont already have it installed you can install it using pip. Google will help you with this if youo get stuck
 
-**nxflash.py Usage**
+**Usage**
 
 nxflash.py *command port file*
 
@@ -55,7 +55,21 @@ Xflash supported dumping/flashing using a parallel port connection in conjunctio
 
 ## Flashing from CD
 
-If you wish, you can build a bootable NXFLASH CD. The process for this is exactly the same as XFLASH. You will need to combine roms together using the romfile utility. Romfile from the last version of xflash has been included in the archive and a sample SYSTEM.CNF is in the CDFILES folder.
+If you wish, you can build a bootable NXFLASH CD. The process for this is exactly the same as XFLASH. You will need to combine roms together using the romfile utility. Romfile from the last version of xflash has been included in the archive and a sample SYSTEM.CNF is in the CDFILES folder. To build a FLASH CD do the following :-
+
+1. Create a new folder (eg ROMS)
+2. Copy all the ROMs you want on the CD into that folder, ensuring they arent encrypted and have the extenstion .ROM
+3. copy the romfile.exe program in there, and run it.
+4. You should now have a file called ROMFILE.DAT
+
+*! When the program detects an Xplorer ROM file, it will extract information from that file and
+  use that as the ROM description for the X-Flash ROM selection menu
+! When the program detects an non-Xplorer ROM file, it will ask you if it should be added to
+  the romfile and uses the filename without extension as the ROM description for the X-Flash ROM
+  selection menu
+! You can change the ROM descriptions any time you want by hex-editing "romfile.dat",
+  be careful not to change any other data or X-Flash might not work properly
+! The current ROM file limit is 128, more ROM's will crash both X-Flash & the ROM builder*
 
 ## Uploading/Flashing via Serial
 
