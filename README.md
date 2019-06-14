@@ -88,7 +88,7 @@ Currently, no matter what flash EEPROM your cart is fitted with nxflash will alw
 NXFLASH supports the full set of EEPROMs that were supported by the last version of xflash. 
 
 Manufacturer|Model|Size|Added?
-------------|-----|----|
+------------|-----|----|------
 ATMEL| 29C010A |128k|Legacy
 ATMEL| 29LV010A|128k|Legacy
 ATMEL| 29C020|256k|Legacy
