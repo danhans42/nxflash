@@ -19,7 +19,7 @@ As well as all the existing features of XFLASH - NXFLASH adds the following feat
 * increased size of Flash From CD Browser
 
 
-## nxflash.py
+## Comms Tool - nxflash.py
 The nxflash.py is the client side tool for NXFLASH. As well as the supported features of xflash, nxflash.py will also allow you to upload & execute a PSX-EXE to PSXSERIAL/UniROM v4.4/v6. NXFLASH itself does not support EXE upload currently - although it is a future goal. 
 
 nxflash.py requires pyserial - if you dont already have it installed you can install it using pip. Google will help you with this if youo get stuck
@@ -42,7 +42,7 @@ This is the name of your serial port, and will differ on what platform you run i
 
 This is the file you want to read from or write to. **WARNING - THIS TOOL WILL OVERWRITE AN EXISTING FILE WITHOUT PROMPTING- BE CAREFUL**
 
-**nxflash.py Examples**
+**Examples**
 
 * Upload ROM - 'nxflash.py -ru /dev/ttyUSB0 caetla038.bin'
 * Download ROM - 'nxflash.py -rd /dev/ttyUSB0 ar_backup.bin'
@@ -62,14 +62,16 @@ If you wish, you can build a bootable NXFLASH CD. The process for this is exactl
 3. copy the romfile.exe program in there, and run it.
 4. You should now have a file called ROMFILE.DAT
 
-Now you need to master a bootable CD image in the correct format. Plenty of guides for that around. The only three files you will need on your CD are NXFLASH.EXE, ROMFILE.DAT and SYSTEM.CNF. 
+Now you need to master a bootable CD image in the correct format. The only three files you will need on your CD are NXFLASH.EXE, ROMFILE.DAT and SYSTEM.CNF
 
-*When the program detects an Xplorer ROM file, it will extract information from that file and use that as the ROM description for the X-Flash ROM selection menu
+If you don't know how to build a CD, here is one way of doing it.. http://www.psxdev.net/help/cdrom_mastering.html
 
-*When the program detects an non-Xplorer ROM file, it will ask you if it should be added to the romfile and uses the filename without extension as the ROM description for the X-Flash ROM selection menu
+Consider the below when building a CD - taken from the original XFLASH readme.
+*When the program detects an Xplorer ROM file, it will extract information from that file and use that as the ROM description for the X-Flash ROM selection menu*
 
-*The current ROM file limit is 128, more ROM's will crash both X-Flash & the ROM builder
+*When the program detects an non-Xplorer ROM file, it will ask you if it should be added to the romfile and uses the filename without extension as the ROM description for the X-Flash ROM selection menu*
 
+*The current ROM file limit is 128, more ROM's will crash both X-Flash & the ROM builder*
 
 ## Uploading/Flashing via Serial
 
