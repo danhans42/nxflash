@@ -1,6 +1,10 @@
 # NXFLASH
 
-NXFLASH is a utility for the Sony Playstation. It allows you to dump/flash the EEPROM of a cheat cartridge from CD/SIO (serial) as well as via parallel using xkiller (untested)
+NXFLASH is a utility for the Sony Playstation. It allows you to flash the EEPROM of a cheat cartridge from a CD or via SIO (serial) as well as via parallel using xkiller (untested).
+
+It uses a basic serial cable for communication, no handshaking required. The same as you would use for PSXSERIAL/HITSERIAL. If you are going to build one, I would recommend avoiding FTDI232 based adapters unless they are definitely genuine, as the counterfeit adapters are a bit flakey, If you are going to be buying from eBay/Aliexpress etc I would avoid FTDI and go for something CH340 or CP210x based. If you need to build a cable head over to PSXdev.net as there are plenty of threads on that.
+
+You can also use an offical Yaroze serial cable or a Sharklink Cable - but I wouldnt bother unless you already have them.
 
 ## Introduction
 
@@ -144,7 +148,8 @@ I will also be looking at adding further features into NXFLASH to make it even m
 * Adding unsupported flash parts (starting with Am29Fxxx series) 
 * EXE Upload (PSX Serial Compatible)
 * Memory Card Dumping/Reading/Writing
-* Overhaul the user interface/colours/fonts
+* Download VRAM
+* Overhaul the user interface (colours/fonts/layout)
 
 ## Thanks
 
