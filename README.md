@@ -62,15 +62,14 @@ If you wish, you can build a bootable NXFLASH CD. The process for this is exactl
 3. copy the romfile.exe program in there, and run it.
 4. You should now have a file called ROMFILE.DAT
 
-```
-When the program detects an Xplorer ROM file, it will extract information from that file and use that as the ROM description for the X-Flash ROM selection menu
+Now you need to master a bootable CD image in the correct format. Plenty of guides for that around. The only three files you will need on your CD are NXFLASH.EXE, ROMFILE.DAT and SYSTEM.CNF. 
 
-When the program detects an non-Xplorer ROM file, it will ask you if it should be added to the romfile and uses the filename without extension as the ROM description for the X-Flash ROM selection menu
+*When the program detects an Xplorer ROM file, it will extract information from that file and use that as the ROM description for the X-Flash ROM selection menu
 
-You can change the ROM descriptions any time you want by hex-editing "romfile.dat", be careful not to change any other data or X-Flash might not work properly.
+*When the program detects an non-Xplorer ROM file, it will ask you if it should be added to the romfile and uses the filename without extension as the ROM description for the X-Flash ROM selection menu
 
-The current ROM file limit is 128, more ROM's will crash both X-Flash & the ROM builder
-```
+*The current ROM file limit is 128, more ROM's will crash both X-Flash & the ROM builder
+
 
 ## Uploading/Flashing via Serial
 
