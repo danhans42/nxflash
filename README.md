@@ -111,7 +111,7 @@ This is a project that I am using to learn more about playstation programming, a
 
 I will also be looking at adding further features into NXFLASH to make it even more useful - my aspiration is for it to turn into a bit of an all-in-one tool.
 
-**Future Goals**
+## Future Goals**
 * EXE Upload
 * Memory Card Dumping/Reading/Writing
 * load EXE from memory card.
