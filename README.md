@@ -61,16 +61,17 @@ If you wish, you can build a bootable NXFLASH CD. The process for this is exactl
 2. Copy all the ROMs you want on the CD into that folder, ensuring they arent encrypted and have the extenstion .ROM
 3. copy the romfile.exe program in there, and run it.
 4. You should now have a file called ROMFILE.DAT
-'''
-*! When the program detects an Xplorer ROM file, it will extract information from that file and
-  use that as the ROM description for the X-Flash ROM selection menu
-! When the program detects an non-Xplorer ROM file, it will ask you if it should be added to
-  the romfile and uses the filename without extension as the ROM description for the X-Flash ROM
-  selection menu
-! You can change the ROM descriptions any time you want by hex-editing "romfile.dat",
-  be careful not to change any other data or X-Flash might not work properly
-! The current ROM file limit is 128, more ROM's will crash both X-Flash & the ROM builder*
-'''
+
+```
+When the program detects an Xplorer ROM file, it will extract information from that file and use that as the ROM description for the X-Flash ROM selection menu
+
+When the program detects an non-Xplorer ROM file, it will ask you if it should be added to the romfile and uses the filename without extension as the ROM description for the X-Flash ROM selection menu
+
+You can change the ROM descriptions any time you want by hex-editing "romfile.dat", be careful not to change any other data or X-Flash might not work properly.
+
+The current ROM file limit is 128, more ROM's will crash both X-Flash & the ROM builder
+```
+
 ## Uploading/Flashing via Serial
 
 1. Connect your serial cable is connected to both your PSX and PC.
