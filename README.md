@@ -1,11 +1,12 @@
 # NXFLASH
-## Introduction
 
 NXFLASH is a utility for the Sony Playstation. It allows you to dump/flash the EEPROM of a cheat cartridge from CD/SIO (serial) as well as via parallel using xkiller (untested)
 
+## Introduction
+
 NXFLASH is built on the source of XFLASH, which was written by Tim Schuerewegen. Thanks to Shadow of PSXDEV.net and Tim for releasing this.  I decided to give it a new name - it basically means 'next xflash'. I believe it needed a new name as the original author may no longer want to be associated with it and to save confusion about client side tool compatibility.
 
-In order to run NXFLASH you will need a way to execute it on a console. I will not cover that here as plenty of guides are out there for mastering bootable PlayStation discs. Alternatively, you could execute it using your usual code upload method (catflap/psxexe etc.).
+In order to run NXFLASH you will need a way to execute it on a console. I will not cover that here as plenty of guides are out there for mastering bootable PlayStation discs and booting them. Alternatively, you could execute it using your usual code upload method (catflap/psxexe/psxserial etc.).
 
 NXFLASH also has a Python3 based client for uploading/downloading data. It has been tested on Python 3.7 on both Linux and Windows 10.
 
@@ -21,7 +22,7 @@ As well as all the existing features of XFLASH - NXFLASH adds the following feat
 ## nxflash.py
 The nxflash.py is the client side tool for NXFLASH. As well as the supported features of xflash, nxflash.py will also allow you to upload & execute a PSX-EXE to PSXSERIAL/UniROM v4.4/v6. NXFLASH itself does not support EXE upload currently - although it is a future goal. 
 
-nxflash.py requires pyserial - if you dont already have it installed you can install it using pip. 
+nxflash.py requires pyserial - if you dont already have it installed you can install it using pip. Google will help you with this if youo get stuck
 
 **nxflash.py usage**
 
@@ -109,14 +110,25 @@ WINBOND| 29C040|512k
 
 ## Thanks
 
-This is a project that I am using to learn more about playstation programming, and C in general. TPlease take that into consideration and if you find any bugs - drop me a line or open an issue here and I will do my best to get onto it. 
+This is a project that I am using to learn more about playstation programming, and C in general. Please take that into consideration and if you find any bugs - drop me a line or open an issue here and I will do my best to get onto it. 
 
-I will also be looking at adding further features into NXFLASH to make it even more useful - my aspiration is for it to turn into a bit of an all-in-one tool.
+Thanks to Tim S for writing xflash and for releasing the sources and to the members of PSXDEV.net.
 
 ## Future Goals
-* EXE Upload
+
+I will also be looking at adding further features into NXFLASH to make it even more useful - my aspiration is for it to turn into a bit of a multi purpose tool.
+
+* Variable EEPROM size download (client initiated - 128/256/512k)
+* Adding unsupported flash parts (starting with Am29Fxxx series) 
+* EXE Upload (PSX Serial Compatible)
 * Memory Card Dumping/Reading/Writing
-* load EXE from memory card.
+* Overhaul the user interface/colours/fonts
+
+contact: danhans42 at gmail.com
+website: psx0.wordpress.com
+
+
+
 
 
 
