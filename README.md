@@ -41,11 +41,11 @@ nxflash.py *command port file*
 
 ## Xplorer + Parallel Port
 
-Xflash supported dumping/flashing using a parallel port connection in conjunction with xkiller. This support has been left untouched in NXFLASH. I havent tested it as I dont have a windows machine running with a parallel port.
+Xflash supported dumping/flashing using a parallel port connection in conjunction with xkiller. This support has been left untouched in NXFLASH. I havent tested it as I dont have a windows machine running with a parallel port. The main point of the features I added is to try and get away from being tied to using a parallel port. I understand that serial isn't faster but when you can upload a ROM and flash it in a few minutes I really dont see a problem.
 
 ## Flashing from CD
 
-If you wish, you can build a bootable NXFLASH CD. The process for this is exactly the same as XFLASH. You will need to combine roms together using the romfile utility.This is included with xflash - see here to obtain an older version http://www.psxdev.net/forum/download/file.php?id=74
+If you wish, you can build a bootable NXFLASH CD. The process for this is exactly the same as XFLASH. You will need to combine roms together using the romfile utility.This is included with xflash - see here to obtain an older version of xflash that has romfile included : http://www.psxdev.net/forum/download/file.php?id=74
 
 ## Uploading/Flashing via Serial
 
@@ -87,26 +87,26 @@ Currently, no matter what flash EEPROM your cart is fitted with nxflash will alw
 
 NXFLASH supports the full set of EEPROMs that were supported by the last version of xflash. 
 
-Manufacturer|Model|Size
-------------|-----|----
-ATMEL| 29C010A |128k
-ATMEL| 29LV010A|128k
-ATMEL| 29C020|256k
-ATMEL| 29BV020|256k
-ATMEL| 29C040A|512k
-ATMEL| 29xV040A|512k
-SST| 29EE010|128k
-SST| 29xE010|128k
-SST| 29EE010A|128k
-SST| 29xE010A|128k
-SST| 29EE020|256k
-SST| 29xE020|256k
-SST| 29EE020A|256k
-SST| 2xEE020A|256k
-SST| 28SF040|512k
-WINBOND| 29EE01x|128k
-WINBOND| 29C020|256k
-WINBOND| 29C040|512k
+Manufacturer|Model|Size|Added?
+------------|-----|----|
+ATMEL| 29C010A |128k|Legacy
+ATMEL| 29LV010A|128k|Legacy
+ATMEL| 29C020|256k|Legacy
+ATMEL| 29BV020|256k|Legacy
+ATMEL| 29C040A|512k|Legacy
+ATMEL| 29xV040A|512k|Legacy
+SST| 29EE010|128k|Legacy
+SST| 29xE010|128k|Legacy
+SST| 29EE010A|128k|Legacy
+SST| 29xE010A|128k|Legacy
+SST| 29EE020|256k|Legacy
+SST| 29xE020|256k|Legacy
+SST| 29EE020A|256k|Legacy
+SST| 2xEE020A|256k|Legacy
+SST| 28SF040|512k|Legacy
+WINBOND| 29EE01x|128k|Legacy
+WINBOND| 29C020|256k|Legacy
+WINBOND| 29C040|512k|Legacy
 
 ## Thanks
 
