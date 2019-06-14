@@ -1,4 +1,4 @@
-#NXFLASH
+# NXFLASH
 ## Introduction
 
 NXFLASH is built on the source of XFLASH, which was written by Tim Schuerewegen. Thanks to Shadow of PSXDEV.net and Tim for releasing this.  I decided to give it a new name - it basically means 'next xflash'. I believe it needed a new name as the original author may no longer want to be associated with it and to save confusion about client side tool compatibility.
@@ -21,7 +21,7 @@ The nxflash.py is the client side tool for NXFLASH. As well as the supported fea
 
 Usage is as follows :- 
 
-'''bash nxflash.py <command> <port> <file> '''
+**nxflash.py** *command port file*
 
 **Commands**
 
