@@ -105,5 +105,16 @@ WINBOND| 29EE01x|128k
 WINBOND| 29C020|256k
 WINBOND| 29C040|512k
 
+## Thanks
+
+This is a project that I am using to learn more about playstation programming, and C in general. TPlease take that into consideration and if you find any bugs - drop me a line or open an issue here and I will do my best to get onto it. 
+
+I will also be looking at adding further features into NXFLASH to make it even more useful - my aspiration is for it to turn into a bit of an all-in-one tool.
+
+Future Goals
+* EXE Upload
+* Memory Card Dumping/Reading/Writing
+* load EXE from memory card.
+
 
 
