@@ -45,7 +45,7 @@ Xflash supported dumping/flashing using a parallel port connection in conjunctio
 
 ## Flashing from CD
 
-If you wish, you can build a bootable NXFLASH CD. The process for this is exactly the same as XFLASH. You will need to combine roms together using the romfile utility.This is included with xflash - see here to obtain an older version of xflash that has romfile included : http://www.psxdev.net/forum/download/file.php?id=74
+If you wish, you can build a bootable NXFLASH CD. The process for this is exactly the same as XFLASH. You will need to combine roms together using the romfile utility. Romfile from the last version of xflash has been included in the archive and a sample SYSTEM.CNF is in the CDFILES folder.
 
 ## Uploading/Flashing via Serial
 
