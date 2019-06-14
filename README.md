@@ -26,7 +26,7 @@ The nxflash.py is the client side tool for NXFLASH. As well as the supported fea
 * -bd : download PSX BIOS.\n")
 * -re : upload & execute PSX-EXE (PSXSERIAL/HITSERIAL/UniROM 4.4/v6 compatible)\n\n")
 
-## Usage
+**Usage**
 
 **nxflash.py** *command port file*
 
