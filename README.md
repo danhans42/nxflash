@@ -80,7 +80,7 @@ Currently there are no CRC checks on transmitted/received data and the protocol 
 
 Currently, no matter what flash EEPROM your cart is fitted with nxflash will always download a full 512k. You can then trim this down. I will address this in future versions. BIOS download is always 512k
 
-* EEPROM Support
+## EEPROM Support
 
 NXFLASH supports the full set of EEPROMs that were supported by the last version of xflash. 
 
