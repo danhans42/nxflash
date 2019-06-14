@@ -32,10 +32,10 @@ The nxflash.py is the client side tool for NXFLASH. As well as the supported fea
 
 **Examples**
 
-* Upload ROM - nxflash.py -ru /dev/ttyUSB0 caetla038.bin
-* Download ROM - nxflash.py -rd /dev/ttyUSB0 ar_backup.bin
-* Download BIOS - nxflash.py -rb /dev/ttyUSB0 scph1002.bin
-* Upload+Run EXE - nxflash.py -re /dev/ttyUSB0 greentro.exe
+* Upload ROM - 'nxflash.py -ru /dev/ttyUSB0 caetla038.bin'
+* Download ROM - 'nxflash.py -rd /dev/ttyUSB0 ar_backup.bin'
+* Download BIOS -'nxflash.py -rb /dev/ttyUSB0 scph1002.bin'
+* Upload+Run EXE - 'nxflash.py -re /dev/ttyUSB0 greentro.exe'
 
 
 
