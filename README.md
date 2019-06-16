@@ -33,10 +33,10 @@ If you run nxflash.py without any command line arguments, it will give you the c
 nxflash.py *command port file*
 
 *command*
-* -ru : upload a ROM to nxflash for flashing.\n")
-* -rd : download ROM from nxflash.\n")
-* -bd : download PSX BIOS.\n")
-* -re : upload & execute PSX-EXE (PSXSERIAL/HITSERIAL/UniROM 4.4/v6 compatible)\n\n")
+* -ur : upload a ROM to nxflash for flashing.
+* -dr : download ROM from nxflash (Copy it to RAM first)
+* -db : download PSX BIOS
+* -run : upload & execute PSX-EXE (PSXSERIAL/HITSERIAL/UniROM 4.4/v6 compatible)\n\n")
 
 *port*
 
@@ -48,14 +48,14 @@ This is the file you want to read from or write to. WARNING - THIS TOOL WILL OVE
 
 **Examples**
 
-* Upload ROM - 'nxflash.py -ru /dev/ttyUSB0 caetla038.bin'
-* Download ROM - 'nxflash.py -rd /dev/ttyUSB0 ar_backup.bin'
-* Download BIOS -'nxflash.py -rb /dev/ttyUSB0 scph1002.bin'
-* Upload+Run EXE - 'nxflash.py -re /dev/ttyUSB0 greentro.exe'
+* Upload ROM - 'nxflash.py -ur /dev/ttyUSB0 caetla038.bin'
+* Download ROM - 'nxflash.py -dr /dev/ttyUSB0 ar_backup.bin'
+* Download BIOS -'nxflash.py -db /dev/ttyUSB0 scph1002.bin'
+* Upload+Run EXE - 'nxflash.py -run /dev/ttyUSB0 greentro.exe'
 
 ## Xkiller & Xplorer + Parallel Port
 
-Xflash supported dumping/flashing using a parallel port connection in conjunction with xkiller. This support has been left untouched in NXFLASH. I havent tested it as I dont have a windows machine running with a parallel port. The main point of the features I added is to try and get away from being tied to using a parallel port. I understand that serial isn't faster but when you can upload a ROM and flash it in a few minutes I really dont see a problem.
+Xflash supported dumping/flashing using a parallel port connection in conjunction with xkiller. This support has been left untouched in NXFLASH. I havent tested it as I dont have a windows machine running with a parallel port. The main point of the features I added is to try and get away from being tied to using a parallel port. I understand that serial isn't faster but when you can upload a ROM and flash it in a few minutes I really dont see a problem. Its left here for those who may want to use a parallel port and xkiller.
 
 ## Flashing from CD
 
