@@ -10,6 +10,7 @@ Pinout for the serial port :-
 
 ![Pinout](https://github.com/danhans42/nxflash/blob/master/pinout.png)
 
+Its fairly simple to do. As for which USB UART to buy, that is up to you. I would read the section 'Limitations' as it has some information on there. I would recommend the Sil CP210x series, or a GENUINE FTDI FT232.. Cant see why a CH340 wouldnt work. They are all readily available on eBay/Amazon/Aliexpress.
 
 ## Introduction
 
@@ -141,9 +142,7 @@ WINBOND| 29C040|512k|Legacy
 
 Currently there are no CRC checks on transmitted/received data and the protocol is very simple. In testing I never once had an issue with transmission errors, but just be careful and ensure you have other means to flash as a contingency. When writing this I had the occasional timeout when using the tools on Linux. The issue turned out to be a fake FTDI UART.
 
-I would recommend avoiding FTDI232 based adapters unless they are 100% genuine as the counterfeit adapters are a bit flakey. Adafruit and Sparkfun are genuine but expensive. If you are going to be buying from eBay/Aliexpress etc I would choose something CH340 or Sil CP210x based. I used a counterfeit FTDI module when first writing and it caused me issues with data loss and timeouts in Linux. 
-
-Build instructions are over on PSXdev.net and other forums for building a cable.
+I would recommend avoiding FTDI232 based adapters unless they are 100% genuine as the counterfeit adapters are a bit flakey. Adafruit and Sparkfun are genuine but expensive.
 
 * ROM/BIOS Download
 
@@ -157,7 +156,6 @@ I will also be looking at adding further features into NXFLASH to make it even m
 * Adding unsupported flash parts (starting with Am29Fxxx series) 
 * EXE Upload (PSX Serial Compatible)
 * Memory Card Dumping/Reading/Writing
-* Download VRAM
 * Overhaul the user interface (colours/fonts/layout)
 
 ## Thanks
