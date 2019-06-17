@@ -59,16 +59,18 @@ This is the file you want to read from or write to. WARNING - THIS TOOL WILL OVE
 
 ## Building a Serial Cable
 
-To make your own cable, purchase a USB UART of your choice and connect RX to TX, TX to RX and GND to GND. You will need to purchase a PlayStation link cable and cut it in half. Then use a continuity checker to find out which colour goes to which pin. Alternatively if you are feeling brave, you can solder one in internally
+To buld your own serial cable, purchase a USB UART of your choice and a PlayStation link cable. You will need to cut it in half and use a continuity checker/multimeter to find out which colour corresponds to which pin. Alternatively if you are feeling brave, you can solder one in internally
+
 
 Pinout for the serial port :-
 
 ![Pinout](https://github.com/danhans42/nxflash/blob/master/psx_SIO_pinout.png)
 
-Its fairly simple to build. As for which USB UART to buy, that is up to you. When writing this I had the occasional timeout issue when using the tools on Linux. The issue turned out to be a fake FTDI UART! Avoid FTDI based adapters unless they are from a reputable source such as Adafruit/Sparkfun etc - avoid eBay/Aliexpress cheap ones.
+You will need to cross over the RXD and TXD lines (ie. PSX TXD to UART RXD), and ground connects straight through.
+
+Fairly simple stuff. As for which USB UART to buy, that is up to you. When writing this I had the occasional timeout issue when using the tools on Linux. The issue turned out to be a fake FTDI UART! Avoid FTDI based adapters unless they are from a reputable source such as Adafruit/Sparkfun etc - avoid eBay/Aliexpress cheap ones.
 
 I have also tested this with the Sil CP210x series UARTS, they have Linux drivers built in. Alternatively a CH340 based adapter will also work. Just make sure they are 3.3v and not 5v.
-
 
 ## Xkiller & Xplorer + Parallel Port
 
