@@ -10,7 +10,7 @@ Pinout for the serial port :-
 
 ![Pinout](https://github.com/danhans42/nxflash/blob/master/psx_SIO_pinout.png)
 
-Its fairly simple to do. As for which USB UART to buy, that is up to you. I would read the section 'Limitations' as it has some information on there. I would recommend the Sil CP210x series, or a GENUINE FTDI FT232.. Cant see why a CH340 wouldnt work. They are all readily available on eBay/Amazon/Aliexpress.
+Its fairly simple to build. As for which USB UART to buy, that is up to you. I would read the section 'Limitations' as it has some information on there. I would recommend the Sil CP210x series, or a GENUINE FTDI FT232.. Cant see why a CH340 wouldnt work. They are all readily available on eBay/Amazon/Aliexpress. Whatever you choose, test it to make sure its reliable using the dunmping functions before attempting to flash a cartridge.
 
 ## Introduction
 
