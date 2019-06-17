@@ -27,7 +27,7 @@ As well as all the existing features of XFLASH - NXFLASH adds the following :-
 ## Comms Tool - nxflash.py
 The nxflash.py is the client side tool for NXFLASH. As well as the supported features of xflash, nxflash.py will also allow you to upload & execute a PSX-EXE to PSXSERIAL/UniROM v4.4/v6. NXFLASH itself does not support EXE upload currently - although it is a future goal. 
 
-nxflash.py requires pyserial - if you dont already have it installed you can install it using pip. Google will help you with this if youo get stuck.
+nxflash.py requires pyserial - if you dont already have it installed you can install it using pip. Google will help you with this if you get stuck.
 
 If you run nxflash.py without any command line arguments, it will give you the command line switches.
 
