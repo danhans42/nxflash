@@ -1,14 +1,14 @@
 # NXFLASH
 
-<p align="center">
-  <img src="https://github.com/danhans42/nxflash/blob/master/images/screenshot_mainmenu.PNG">
-</p>
+## Introduction
 
 NXFLASH is a utility for the Sony Playstation. It allows you to flash the EEPROM of a cheat cartridge from a CD or via SIO (serial) as well as via parallel using xkiller (untested).
 
 It uses a basic serial cable for communication, no handshaking required(just Rx/Tx/Gnd). You can also use an offical Yaroze serial cable or a Sharklink Cable - but I wouldnt bother with those unless you already own one and really want to use an old DB9 serial port.
 
-## Introduction
+<p align="center">
+  <img src="https://github.com/danhans42/nxflash/blob/master/images/screenshot_mainmenu.PNG">
+</p>
 
 NXFLASH is built on the source of XFLASH, which was written by Tim Schuerewegen. Thanks to Shadow of PSXDEV.net and Tim for releasing this.  I decided to give it a new name - it basically means 'next xflash'. I believe it needed a new name as the original author may no longer want to be associated with it and to save confusion about client side tool compatibility.
 
