@@ -1,4 +1,10 @@
-![screenshot](https://psx0.files.wordpress.com/2019/06/outfile.png)
+#NXFLASH
+
+<p align="center">
+  <img src="https://psx0.files.wordpress.com/2019/06/outfile.png">
+</p>
+
+![screenshot]()
 
 NXFLASH is a utility for the Sony Playstation. It allows you to flash the EEPROM of a cheat cartridge from a CD or via SIO (serial) as well as via parallel using xkiller (untested).
 
