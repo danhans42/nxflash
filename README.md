@@ -83,6 +83,7 @@ Now you need to master a bootable CD image in the correct format. The only three
 If you don't know how to build a CD, here is one way of doing it.. http://www.psxdev.net/help/cdrom_mastering.html
 
 Consider the below when building a CD - taken from the original XFLASH readme.
+
 *When the program detects an Xplorer ROM file, it will extract information from that file and use that as the ROM description for the X-Flash ROM selection menu*
 
 *When the program detects an non-Xplorer ROM file, it will ask you if it should be added to the romfile and uses the filename without extension as the ROM description for the X-Flash ROM selection menu*
