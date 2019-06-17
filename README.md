@@ -1,12 +1,12 @@
 # NXFLASH
 
-NXFLASH is a utility for the Sony Playstation. It allows you to flash the EEPROM of a cheat cartridge from a CD or via SIO (serial) as well as via parallel using xkiller (untested).
-
 <p align="center">
   <img src="https://psx0.files.wordpress.com/2019/06/outfile.png">
 </p>
 
-It uses a basic serial cable for communication, no handshaking required(just Rx/Tx/Gnd). You can also use an offical Yaroze serial cable or a Sharklink Cable - but I wouldnt bother unless you already own one.
+NXFLASH is a utility for the Sony Playstation. It allows you to flash the EEPROM of a cheat cartridge from a CD or via SIO (serial) as well as via parallel using xkiller (untested).
+
+It uses a basic serial cable for communication, no handshaking required(just Rx/Tx/Gnd). You can also use an offical Yaroze serial cable or a Sharklink Cable - but I wouldnt bother with those unless you already own one and really want to use an old DB9 serial port.
 
 ## Introduction
 
@@ -16,14 +16,13 @@ In order to run NXFLASH you will need a way to execute it on a console. I will n
 
 NXFLASH also has a Python3 based client for uploading/downloading data. It has been tested on Python 3.7 on both Linux and Windows 10.
 
-As well as all the existing features of XFLASH - NXFLASH adds the following features :-
+As well as all the existing features of XFLASH - NXFLASH adds the following :-
 
 * Dump cart EEPROM via Serial
 * Dump PSX BIOS via Serial
 * Upload/Flash cart EEPROM via Serial
 * increased screen width to 640px (from 512).
 * increased size of Flash From CD Browser
-
 
 ## Comms Tool - nxflash.py
 The nxflash.py is the client side tool for NXFLASH. As well as the supported features of xflash, nxflash.py will also allow you to upload & execute a PSX-EXE to PSXSERIAL/UniROM v4.4/v6. NXFLASH itself does not support EXE upload currently - although it is a future goal. 
