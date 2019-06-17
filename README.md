@@ -156,17 +156,18 @@ Currently there are no CRC checks on transmitted/received data and the protocol 
 
 * ROM/BIOS Download
 
-Currently, no matter what flash EEPROM your cart is fitted with nxflash will always download a full 512k. You can then trim this down. I will address this in future versions. BIOS download is always 512k.
+Currently, no matter what flash EEPROM your cart is fitted with nxflash will always download a full 512k. BIOS download is always 512k. You can trim this with a tool of your choice - I have used HXD for this in the past. 
 
 ## Future Goals
 
 I will also be looking at adding further features into NXFLASH to make it even more useful - my aspiration is for it to turn into a bit of a multi purpose tool.
 
-* Variable EEPROM size download (client initiated - 128/256/512k)
 * Adding unsupported flash parts (starting with Am29Fxxx series) 
 * EXE Upload (PSX Serial Compatible)
 * Memory Card Dumping/Reading/Writing
 * Overhaul the user interface (colours/fonts/layout)
+
+Ideally I want to keep this application as small as possible - hence the ascii style big text. 
 
 ## Thanks
 
@@ -176,7 +177,7 @@ Thanks to Tim S for writing xflash and for releasing the sources and to Shadow o
 
 Also, big thanks to Hitmen, Sicklebrick, Trimesh, Squaresoft74, Shendo, Lameguy64, orion, Xavi92 and Greg - your posts, published source code and releases have helped massively with my learning of programming on the PSX.
 
-I am always interested to hear of carts/eeproms that are not supported. If you have one drop me a line
+I am always interested to hear of carts/eeproms that are not supported. If you have one please get in touch.
 
 contact: danhans42 at gmail.com
 website: psx0.wordpress.com
