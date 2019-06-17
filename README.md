@@ -99,7 +99,7 @@ Consider the below when building a CD - taken from the original XFLASH readme.
 
 ## Uploading/Flashing via Serial
 
-1. Connect your serial cable is connected to both your PSX and PC.
+1. Connect your serial cable to both your PSX and PC.
 2. Run NXFLASH on your PlayStation via your chosen method - ensure your EEPROM is correctly detected (not unknown/unsupported).
 3. Press TRIANGLE on the pad to go into serial ROM upload.
 4. On your machine upload your rom eg. nxflash.py -ru /dev/ttyS0 uniromv66.bin 
@@ -119,7 +119,7 @@ Consider the below when building a CD - taken from the original XFLASH readme.
 
 1. Connect your serial cable is connected to both your PSX and PC.
 2. Run NXFLASH on your PlayStation via your chosen method - ensure your EEPROM is correctly detected (not unknown/unsupported).
-3. Press SQUARE on the pad to go into dump bios to SIO.
+3. Press L2 on the pad to go into dump RAM to SIO.
 4. On your machine upload your rom eg. nxflash.py -rd /dev/ttyS0 actionreplaydump.bin 
 5. Once it has successfully downloaded, NXFLASH will return to the main menu. 
 
@@ -152,7 +152,7 @@ WINBOND| 29C040|512k|Legacy
 
 * There is NO CRC/CHECKSUM/VERIFICATION 
 
-Currently there are no CRC checks on transmitted/received data and the protocol is very simple. In testing I never once had an issue with transmission errors, but just be careful and ensure you have other means of recovery as a backup (ie from CD).
+Currently there are no CRC checks on transmitted/received data and the protocol is very simple. In testing I never once had an issue with transmission errors, but just be careful and ensure you have other means of recovery as a backup (ie from CD). A simple way to validate what you have uploaded is to download it back from RAM, and compare the two files - the only differences should be the file sizes. In testing I did not have a single issue with data upload/download - data always verified 100%
 
 * ROM/BIOS Download
 
