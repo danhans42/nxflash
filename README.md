@@ -8,14 +8,6 @@ NXFLASH is a utility for the Sony Playstation. It allows you to flash the EEPROM
 
 It uses a basic serial cable for communication, no handshaking required(just Rx/Tx/Gnd). You can also use an offical Yaroze serial cable or a Sharklink Cable - but I wouldnt bother unless you already own one.
 
-To make your own cable, purchase a USB UART of your choice and connect RX to TX, TX to RX and GND to GND. You will need to purchase a PlayStation link cable and cut it in half. Then use a continuity checker to find out which colour goes to which pin.
-
-Pinout for the serial port :-
-
-![Pinout](https://github.com/danhans42/nxflash/blob/master/psx_SIO_pinout.png)
-
-Its fairly simple to build. As for which USB UART to buy, that is up to you. I would read the section 'Limitations' as it has some information on there. I would recommend the Sil CP210x series, or a GENUINE FTDI FT232.. Cant see why a CH340 wouldnt work. They are all readily available on eBay/Amazon/Aliexpress. Whatever you choose, test it to make sure its reliable using the dunmping functions before attempting to flash a cartridge.
-
 ## Introduction
 
 NXFLASH is built on the source of XFLASH, which was written by Tim Schuerewegen. Thanks to Shadow of PSXDEV.net and Tim for releasing this.  I decided to give it a new name - it basically means 'next xflash'. I believe it needed a new name as the original author may no longer want to be associated with it and to save confusion about client side tool compatibility.
@@ -64,6 +56,19 @@ This is the file you want to read from or write to. WARNING - THIS TOOL WILL OVE
 * Download ROM - 'nxflash.py -dr /dev/ttyUSB0 ar_backup.bin'
 * Download BIOS -'nxflash.py -db /dev/ttyUSB0 scph1002.bin'
 * Upload+Run EXE - 'nxflash.py -run /dev/ttyUSB0 greentro.exe'
+
+## Building a Serial Cable
+
+To make your own cable, purchase a USB UART of your choice and connect RX to TX, TX to RX and GND to GND. You will need to purchase a PlayStation link cable and cut it in half. Then use a continuity checker to find out which colour goes to which pin. Alternatively if you are feeling brave, you can solder one in internally
+
+Pinout for the serial port :-
+
+![Pinout](https://github.com/danhans42/nxflash/blob/master/psx_SIO_pinout.png)
+
+Its fairly simple to build. As for which USB UART to buy, that is up to you. When writing this I had the occasional timeout issue when using the tools on Linux. The issue turned out to be a fake FTDI UART! Avoid FTDI based adapters unless they are from a reputable source such as Adafruit/Sparkfun etc - avoid eBay/Aliexpress cheap ones.
+
+I have also tested this with the Sil CP210x series UARTS, they have Linux drivers built in. Alternatively a CH340 based adapter will also work. Just make sure they are 3.3v and not 5v.
+
 
 ## Xkiller & Xplorer + Parallel Port
 
@@ -145,9 +150,7 @@ WINBOND| 29C040|512k|Legacy
 
 * There is NO CRC/CHECKSUM/VERIFICATION 
 
-Currently there are no CRC checks on transmitted/received data and the protocol is very simple. In testing I never once had an issue with transmission errors, but just be careful and ensure you have other means to flash as a contingency. When writing this I had the occasional timeout when using the tools on Linux. The issue turned out to be a fake FTDI UART.
-
-I would recommend avoiding FTDI232 based adapters unless they are 100% genuine as the counterfeit adapters are a bit flakey. Adafruit and Sparkfun are genuine but expensive.
+Currently there are no CRC checks on transmitted/received data and the protocol is very simple. In testing I never once had an issue with transmission errors, but just be careful and ensure you have other means of recovery as a backup (ie from CD).
 
 * ROM/BIOS Download
 
