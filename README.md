@@ -1,7 +1,7 @@
 # NXFLASH
 
 <p align="center">
-  <img src="https://psx0.files.wordpress.com/2019/06/outfile.png">
+  <img src="https://github.com/danhans42/nxflash/blob/master/images/psx_SIO_pinout.png?raw=true">
 </p>
 
 NXFLASH is a utility for the Sony Playstation. It allows you to flash the EEPROM of a cheat cartridge from a CD or via SIO (serial) as well as via parallel using xkiller (untested).
@@ -63,7 +63,7 @@ To buld your own serial cable, purchase a USB UART of your choice and a PlayStat
 
 Pinout for the serial port :-
 
-![Pinout](https://github.com/danhans42/nxflash/blob/master/psx_SIO_pinout.png)
+![Pinout](https://github.com/danhans42/nxflash/blob/master/images/psx_SIO_pinout.png)
 
 You will need to cross over the RXD and TXD lines (ie. PSX TXD to UART RXD), and ground connects straight through.
 
