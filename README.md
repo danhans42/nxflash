@@ -106,8 +106,8 @@ Consider the below when building a CD - taken from the original XFLASH readme.
 3. Press TRIANGLE on the pad to go into serial ROM upload.
 4. On your machine upload your rom eg. nxflash.py -ru /dev/ttyS0 uniromv66.bin 
 5. Once it has successfully uploaded, NXFLASH will return to the main menu. 
-6. You will now see the Flash ROM option appear, press X to flash. If there are no error messages the flash was successful.
-7. Reboot your console.
+6. You will now see the Flash ROM option appear, press X to flash. Then at the warning prompt press O. If there are no error messages the flash was successful.
+7. Press O to reboot your console.
 
 ## Dump BIOS via Serial
 
