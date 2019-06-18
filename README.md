@@ -99,6 +99,8 @@ Consider the below when building a CD - taken from the original XFLASH readme.
 
 *The current ROM file limit is 128, trying more ROM's will crash both X-Flash & the ROM builder*
 
+A prebuilt romfile.dat that has caetla, xplorer and uniflash can be found in the UniROM v6 archive, see the first post. http://www.psxdev.net/forum/viewtopic.php?t=722 
+
 ## Uploading/Flashing via Serial
 
 1. Connect your serial cable to both your PSX and PC.
@@ -182,6 +184,7 @@ Also, big thanks to Hitmen, Sicklebrick, Trimesh, Squaresoft74, Shendo, Lameguy6
 I am always interested to hear of carts/eeproms that are not supported. If you have one please get in touch.
 
 contact: danhans42 at gmail.com
+
 website: psx0.wordpress.com
 
 
