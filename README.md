@@ -31,6 +31,7 @@ As well as all the existing features of XFLASH - NXFLASH adds the following :-
 The nxflash.py is the client side tool for NXFLASH. As well as the supported features of xflash, nxflash.py will also allow you to upload & execute a PSX-EXE to PSXSERIAL/UniROM v4.4/v6. NXFLASH itself does not support EXE upload currently - although it is a future goal. 
 
 nxflash.py requires pyserial - if you dont already have it installed you can install it using pip. Google will help you with this if you get stuck.
+NOTE: Please ensure you install pyserial by using pip3 install pyserial (NOT pip3 install serial) . Also, if you have problems with having access to the port, please ensure your username is added to the group 'tty' or 'dialout'.
 
 If you run nxflash.py without any command line arguments, it will give you the command line switches.
 
@@ -191,9 +192,3 @@ I am always interested to hear of carts/eeproms that are not supported. If you h
 contact: danhans42 at gmail.com
 
 website: psx0.wordpress.com
-
-
-
-
-
-
