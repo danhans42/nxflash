@@ -187,5 +187,7 @@ Also, big thanks to Hitmen, Sicklebrick, Trimesh, Squaresoft74, Shendo, Lameguy6
 I am always interested to hear of carts/eeproms that are not supported. If you have one please get in touch.
 
 contact: danhans42 at gmail.com
-
 website: psx0.wordpress.com
+
+discord - join us for more psx dev related chat - http://psx.dev/ 
+
