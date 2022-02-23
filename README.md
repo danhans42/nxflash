@@ -160,7 +160,7 @@ Currently there are no CRC checks on transmitted/received data and the protocol 
 
 Currently, no matter what flash EEPROM your cart is fitted with nxflash will always download a full 512k. BIOS download is always 512k. You can trim this with a tool of your choice - I have used HXD for this in the past.
 
-* Xplorer FX Cartdridges
+* Xplorer FX Cartridges
 
 Squaresoft74 has identified in testing that the dual banked model of the Xplorer FX currenltly isnt detected correctly by NXFLASH. If you open your FX cart and it has 2 SST29EE020 PLCC32 EEPROMs fitted, it currently wont flash properly. I have attempted to source one of these carts quite a few times but always end up with a single AT29C040 model. If you attempt to flash currently you may end up just flashing the first bank!
 ## PLEASE DO NOT FLASH DUAL EEPROM XPLORER FX CARTS WITH NXFLASH as they are unsupported. ##
