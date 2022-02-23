@@ -90,8 +90,6 @@ If you wish, you can build a bootable NXFLASH CD. The process for this is exactl
 
 Now you need to master a bootable CD image in the correct format. The only three files you will need on your CD are NXFLASH.EXE, ROMFILE.DAT and SYSTEM.CNF
 
-If you don't know how to build a CD, here is one way of doing it.. http://www.psxdev.net/help/cdrom_mastering.html
-
 Consider the below when building a CD - taken from the original XFLASH readme.
 
 *When the program detects an Xplorer ROM file, it will extract information from that file and use that as the ROM description for the X-Flash ROM selection menu*
@@ -100,7 +98,6 @@ Consider the below when building a CD - taken from the original XFLASH readme.
 
 *The current ROM file limit is 128, trying more ROM's will crash both X-Flash & the ROM builder*
 
-A prebuilt romfile.dat that has caetla, xplorer and uniflash can be found in the UniROM v6 archive, see the first post. http://www.psxdev.net/forum/viewtopic.php?t=722 
 
 ## Uploading/Flashing via Serial
 
